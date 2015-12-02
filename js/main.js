@@ -98,7 +98,7 @@ $(document).mousemove(function(e) {
     }
 });
  
-UPDATE PROGRESS BAR ON MANUAL CHANGE
+//UPDATE PROGRESS BAR ON MANUAL CHANGE
 var updatebar = function(x) {
     var progress = $('#progressBar');
     var maxduration = vid.duration;
