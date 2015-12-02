@@ -81,40 +81,40 @@ var timeBar = document.getElementById("timeBar");
 var progressBar = document.getElementById("progressBar");
 var bufferBar = document.getElementById("bufferBar");
 
-// var timeDrag = false;
-// $('#progressBar').mousedown(function(e) {
-    // timeDrag = true;
-    // updatebar(e.pageX);
-// });
-// $(document).mouseup(function(e) {
-    // if(timeDrag) {
-        // timeDrag = false;
-        // updatebar(e.pageX);
-    // }
-// });
-// $(document).mousemove(function(e) {
-    // if(timeDrag) {
-        // updatebar(e.pageX);
-    // }
-// });
+var timeDrag = false;
+$('#progressBar').mousedown(function(e) {
+    timeDrag = true;
+    updatebar(e.pageX);
+});
+$(document).mouseup(function(e) {
+    if(timeDrag) {
+        timeDrag = false;
+        updatebar(e.pageX);
+    }
+});
+$(document).mousemove(function(e) {
+    if(timeDrag) {
+        updatebar(e.pageX);
+    }
+});
  
-//UPDATE PROGRESS BAR ON MANUAL CHANGE
-// var updatebar = function(x) {
-    // var progress = $('#progressBar');
-    // var maxduration = vid.duration;
-    // var position = x - progress.offset().left;
-    // var percentage = 100 * position / progress.width();
+UPDATE PROGRESS BAR ON MANUAL CHANGE
+var updatebar = function(x) {
+    var progress = $('#progressBar');
+    var maxduration = vid.duration;
+    var position = x - progress.offset().left;
+    var percentage = 100 * position / progress.width();
  
-    // if(percentage > 100) {
-        // percentage = 100;
-    // }
-    // if(percentage < 0) {
-        // percentage = 0;
-    // }
+    if(percentage > 100) {
+        percentage = 100;
+    }
+    if(percentage < 0) {
+        percentage = 0;
+    }
 
-    // $('#timeBar').css('width', percentage+'%');
-    // vid.currentTime = maxduration * percentage / 100;
-// };
+    $('#timeBar').css('width', percentage+'%');
+    vid.currentTime = maxduration * percentage / 100;
+};
 
 //BUFFERED DATA
 // var startBuffer = function() {
@@ -193,20 +193,20 @@ clickable(p5, 32.11);
 clickable(p6, 42.36);
 clickable(p7,53.77 );
 clickable(p8, 57.79);
-clickable(p9, 69.45);
-clickable(p10, 74.2);
-clickable(p11, 80.42);
-clickable(p12, 85.55);
-clickable(p13, 93.86);
-clickable(p14, 107.94);
-clickable(p15, 119.99);
-clickable(p16, 124.3);
-clickable(p17, 129.88);
-clickable(p18, 137.6);
-clickable(p19, 143.2);
-clickable(p20, 149.75);
-clickable(p21, 156.18);
-clickable(p22, 164.57);
+// clickable(p9, 69.45);
+// clickable(p10, 74.2);
+// clickable(p11, 80.42);
+// clickable(p12, 85.55);
+// clickable(p13, 93.86);
+// clickable(p14, 107.94);
+// clickable(p15, 119.99);
+// clickable(p16, 124.3);
+// clickable(p17, 129.88);
+// clickable(p18, 137.6);
+// clickable(p19, 143.2);
+// clickable(p20, 149.75);
+// clickable(p21, 156.18);
+// clickable(p22, 164.57);
 
 // SHORTCUT FUNCTION TO HIGHLIGHT APPROPRIATE TEXT 
 function hiLite(t1, t2, idee) {
@@ -248,19 +248,19 @@ vid.ontimeupdate  = function() {
 	hiLite(32.09, 41.2, p5);
 	hiLite(42.34, 53.77, p6);
 	hiLite(53.75, 57.79, p7);
-	hiLite(57.77, 69.45, p8);
-	hiLite(69.43, 74.2, p9);
-	hiLite(74.18, 79.16, p10);
-	hiLite(80.4, 85.55, p11);
-	hiLite(85.53, 92.81, p12);
-	hiLite(93.84, 107.94, p13);
-	hiLite(107.92, 119.99, p14);
-	hiLite(119.97, 124.3, p15);
-	hiLite(124.28, 129.88, p16);
-	hiLite(129.86, 137.6, p17);
-	hiLite(137.58, 143.2, p18);
-	hiLite(143.18, 149.75, p19);
-	hiLite(149.73, 156.18, p20);
-	hiLite(156.16, 164.57, p21);
-	hiLite(164.55, 176.87, p22);
+	hiLite(57.77, 6.15, p8);
+	// hiLite(69.43, 74.2, p9);
+	// hiLite(74.18, 79.16, p10);
+	// hiLite(80.4, 85.55, p11);
+	// hiLite(85.53, 92.81, p12);
+	// hiLite(93.84, 107.94, p13);
+	// hiLite(107.92, 119.99, p14);
+	// hiLite(119.97, 124.3, p15);
+	// hiLite(124.28, 129.88, p16);
+	// hiLite(129.86, 137.6, p17);
+	// hiLite(137.58, 143.2, p18);
+	// hiLite(143.18, 149.75, p19);
+	// hiLite(149.73, 156.18, p20);
+	// hiLite(156.16, 164.57, p21);
+	// hiLite(164.55, 176.87, p22);
 };
