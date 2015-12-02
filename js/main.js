@@ -220,24 +220,24 @@ function hiLite(t1, t2, idee) {
 vid.ontimeupdate  = function() {
 
 	// FORMAT VIDEO CURRENT TIME AND DURATION
-	var curmins = Math.floor(vid.currentTime / 60);
-	var cursecs = Math.floor(vid.currentTime - curmins * 60);
-	var durmins = Math.floor(vid.duration / 60);
-	var dursecs = Math.floor(vid.duration - durmins * 60);
-	if(cursecs < 10){ cursecs = "0" + cursecs; }
-	if(dursecs < 10){ dursecs = "0" + dursecs; }
-	if(curmins < 10){ curmins = "0" + curmins; }
-	if(durmins < 10){ durmins = "0" + durmins; }
-	cur.innerHTML = curmins + ":" + cursecs + "/ ";
-	dur.innerHTML = durmins + ":" + dursecs;
+	// var curmins = Math.floor(vid.currentTime / 60);
+	// var cursecs = Math.floor(vid.currentTime - curmins * 60);
+	// var durmins = Math.floor(vid.duration / 60);
+	// var dursecs = Math.floor(vid.duration - durmins * 60);
+	// if(cursecs < 10){ cursecs = "0" + cursecs; }
+	// if(dursecs < 10){ dursecs = "0" + dursecs; }
+	// if(curmins < 10){ curmins = "0" + curmins; }
+	// if(durmins < 10){ durmins = "0" + durmins; }
+	// cur.innerHTML = curmins + ":" + cursecs + "/ ";
+	// dur.innerHTML = durmins + ":" + dursecs;
 	
 	
 	// UPDATE PROGRESS BAR
-	var currentPos = vid.currentTime;
-	var maxduration = vid.duration;
-	var percentage = 100 * currentPos / maxduration;
-	var ps = percentage.toString();
-	$('#timeBar').css('width', percentage+'%');
+	// var currentPos = vid.currentTime;
+	// var maxduration = vid.duration;
+	// var percentage = 100 * currentPos / maxduration;
+	// var ps = percentage.toString();
+	// $('#timeBar').css('width', percentage+'%');
 	
 	
 	// HICHLIGHT TRANSCRIPTS ON CUE
