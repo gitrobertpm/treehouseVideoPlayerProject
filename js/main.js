@@ -81,53 +81,53 @@ var timeBar = document.getElementById("timeBar");
 var progressBar = document.getElementById("progressBar");
 var bufferBar = document.getElementById("bufferBar");
 
-var timeDrag = false;
-$('#progressBar').mousedown(function(e) {
-    timeDrag = true;
-    updatebar(e.pageX);
-});
-$(document).mouseup(function(e) {
-    if(timeDrag) {
-        timeDrag = false;
-        updatebar(e.pageX);
-    }
-});
-$(document).mousemove(function(e) {
-    if(timeDrag) {
-        updatebar(e.pageX);
-    }
-});
+// var timeDrag = false;
+// $('#progressBar').mousedown(function(e) {
+    // timeDrag = true;
+    // updatebar(e.pageX);
+// });
+// $(document).mouseup(function(e) {
+    // if(timeDrag) {
+        // timeDrag = false;
+        // updatebar(e.pageX);
+    // }
+// });
+// $(document).mousemove(function(e) {
+    // if(timeDrag) {
+        // updatebar(e.pageX);
+    // }
+// });
  
 //UPDATE PROGRESS BAR ON MANUAL CHANGE
-var updatebar = function(x) {
-    var progress = $('#progressBar');
-    var maxduration = vid.duration;
-    var position = x - progress.offset().left;
-    var percentage = 100 * position / progress.width();
+// var updatebar = function(x) {
+    // var progress = $('#progressBar');
+    // var maxduration = vid.duration;
+    // var position = x - progress.offset().left;
+    // var percentage = 100 * position / progress.width();
  
-    if(percentage > 100) {
-        percentage = 100;
-    }
-    if(percentage < 0) {
-        percentage = 0;
-    }
+    // if(percentage > 100) {
+        // percentage = 100;
+    // }
+    // if(percentage < 0) {
+        // percentage = 0;
+    // }
 
-    $('#timeBar').css('width', percentage+'%');
-    vid.currentTime = maxduration * percentage / 100;
-};
+    // $('#timeBar').css('width', percentage+'%');
+    // vid.currentTime = maxduration * percentage / 100;
+// };
 
 //BUFFERED DATA
-var startBuffer = function() {
-    var maxduration = vid.duration;
-    var currentBuffer = vid.buffered.end(0);
-    var percentage = 100 * currentBuffer / maxduration;
-    $('#bufferBar').css('width', percentage+'%');
+// var startBuffer = function() {
+    // var maxduration = vid.duration;
+    // var currentBuffer = vid.buffered.end(0);
+    // var percentage = 100 * currentBuffer / maxduration;
+    // $('#bufferBar').css('width', percentage+'%');
  
-    if(currentBuffer < maxduration) {
-        setTimeout(startBuffer, 500);
-    }
-};
-setTimeout(startBuffer, 500);
+    // if(currentBuffer < maxduration) {
+        // setTimeout(startBuffer, 500);
+    // }
+// };
+// setTimeout(startBuffer, 500);
 
 // FULLSCREEN - GOT SOME HELP FOR THIS FROM THE FOLLOWING LINK: http://generatedcontent.org/post/70347573294/is-your-fullscreen-api-code-up-to-date-find-out
 var fullscreen = document.getElementById("fullscreen");
