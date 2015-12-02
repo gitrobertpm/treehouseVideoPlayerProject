@@ -1,0 +1,223 @@
+1
+00:00:00,240 --> 00:00:04,130
+Now that we've looked at the architecture
+of the internet, let's see how you might
+
+2
+00:00:04,130 --> 00:00:07,535
+connect your personal devices to
+the internet inside your house.
+
+3
+00:00:07,535 --> 00:00:11,270
+Well there are many ways to
+connect to the internet, and
+
+4
+00:00:11,270 --> 00:00:13,960
+most often people connect wirelessly.
+
+5
+00:00:13,960 --> 00:00:17,940
+Let's look at an example of how
+you can connect to the internet.
+
+6
+00:00:17,940 --> 00:00:22,370
+If you live in a city or a town,
+you probably have a coaxial cable for
+
+7
+00:00:22,370 --> 00:00:26,880
+cable Internet, or a phone line if you
+have DSL, running to the outside of
+
+8
+00:00:26,880 --> 00:00:30,920
+your house, that connects you to
+the Internet Service Provider, or ISP.
+
+9
+00:00:32,100 --> 00:00:34,730
+If you live far out in the country,
+you'll more likely have
+
+10
+00:00:34,730 --> 00:00:39,430
+a dish outside your house, connecting
+you wirelessly to your closest ISP, or
+
+11
+00:00:39,430 --> 00:00:41,190
+you might also use the telephone system.
+
+12
+00:00:42,350 --> 00:00:46,300
+Whether a wire comes straight from
+the ISP hookup outside your house, or
+
+13
+00:00:46,300 --> 00:00:49,270
+it travels over radio
+waves from your roof,
+
+14
+00:00:49,270 --> 00:00:53,760
+the first stop a wire will make once
+inside your house, is at your modem.
+
+15
+00:00:53,760 --> 00:00:57,780
+A modem is what connects the internet
+to your network at home.
+
+16
+00:00:57,780 --> 00:01:00,150
+A few common residential modems are DSL or
+
+17
+00:01:00,150 --> 00:01:04,085
+cable which translate the digital
+data from your computer
+
+18
+00:01:04,085 --> 00:01:09,440
+into digital signals to be transmitted
+over cable or telephone wires.
+
+19
+00:01:09,440 --> 00:01:14,190
+From the modem, an ethernet cable will
+usually connect to a residential router.
+
+20
+00:01:14,190 --> 00:01:17,600
+Although today, some service
+providers combine your modem and
+
+21
+00:01:17,600 --> 00:01:19,150
+router together in one box.
+
+22
+00:01:20,410 --> 00:01:25,540
+Inside your house, you might have multiple
+devices from a laptop to a thermostat.
+
+23
+00:01:25,540 --> 00:01:29,820
+But no matter what kind of devices you
+have, your router acts as your home's
+
+24
+00:01:29,820 --> 00:01:32,800
+central hub that connects all
+you devices to the internet.
+
+25
+00:01:33,850 --> 00:01:37,530
+In order to connect to a router,
+you can either hard connect a device with
+
+26
+00:01:37,530 --> 00:01:42,810
+an ethernet cable, like in the case of a
+TV, desktop computer, or game console, or
+
+27
+00:01:42,810 --> 00:01:47,930
+wirelessly, like for a laptop, phone,
+or printer equipped with Wi-Fi.
+
+28
+00:01:47,930 --> 00:01:50,110
+To review,
+everything we've been learning about,
+
+29
+00:01:50,110 --> 00:01:55,040
+the backbone of the internet is made
+up of primary routers, networks, and
+
+30
+00:01:55,040 --> 00:01:59,980
+typically fiber optic cables
+connecting networks around the globe.
+
+31
+00:01:59,980 --> 00:02:04,290
+Routers and switches create local and
+wide area networks.
+
+32
+00:02:04,290 --> 00:02:08,300
+Modems and routers connect your devices
+to the internet service provider,
+
+33
+00:02:08,300 --> 00:02:09,878
+which connects you to the internet.
+
+34
+00:02:09,878 --> 00:02:14,260
+And the TCP/IP protocol suite
+defines the rules of how
+
+35
+00:02:14,260 --> 00:02:17,590
+each of these devices
+communicate over the Internet.
+
+36
+00:02:17,590 --> 00:02:20,520
+The Internet has come a long
+way since its inception as
+
+37
+00:02:20,520 --> 00:02:23,190
+a US Defense Department research project.
+
+38
+00:02:23,190 --> 00:02:27,290
+And most people take for granted how
+easy it is to connect information and
+
+39
+00:02:27,290 --> 00:02:29,740
+people through the Internet nowadays.
+
+40
+00:02:29,740 --> 00:02:32,230
+But maintaining the pipelines,
+protocols, and
+
+41
+00:02:32,230 --> 00:02:36,170
+technologies that keep the Internet
+working is no easy task.
+
+42
+00:02:36,170 --> 00:02:40,120
+It's also important to note before we go,
+that not everyone in
+
+43
+00:02:40,120 --> 00:02:44,560
+every country has equal access to
+this great pipeline of information.
+
+44
+00:02:44,560 --> 00:02:48,490
+But no matter where you're from, or
+what you wish to do on the Internet,
+
+45
+00:02:48,490 --> 00:02:52,950
+being informed, maintaining standards, and
+contributing to the upkeep of the internet
+
+46
+00:02:52,950 --> 00:02:56,860
+hardware and protocols is our
+responsibility as consumers.
+

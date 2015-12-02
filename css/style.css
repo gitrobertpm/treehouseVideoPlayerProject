@@ -1,0 +1,125 @@
+/* TREEHOUSE VIDEO PLAYER PROJECT - VIDEO AND CONTROLS - BUILT MOBILE FIRST */
+/* STYLINGS FOR LARGE SCREENS LOCATED IN RESPONSIVE.CSS */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	outline: none !important;
+}
+
+.videoWrap,
+#video,
+.controlWrap,
+.control {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.videoWrap {
+	position: relative;
+}
+
+.controlWrap {
+	position: relative;
+	height: 50px;
+	margin-top: 0px;
+	background: black;
+}
+
+.control {
+	position: absolute;
+	height: 50px;
+	z-index: 999;
+}
+
+#progressBar {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,.2);
+    cursor: pointer;
+}
+
+.bufferBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: blue;
+}
+
+#timeBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: orange;
+}
+
+.glyphicon {
+	font-size: 1.9em;
+	color: rgb(255,255,255);
+}
+
+.playRate {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 9999;
+}
+
+.progressTime {
+	position: absolute;
+	top: 15px;
+	left: 150px;
+	height: 25px;
+	color: white;
+	font-size: 1.1em;
+}
+
+.vol {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+}
+
+.volCon {
+	display: none;
+}
+
+#fullscreen {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+}
+
+
+
+/* TRANSCRIPT */
+.mainWrap {
+	position: realtive;
+	margin: auto;
+	width: 95%;
+	max-width: 1000px;
+}
+
+#transcript {
+	position: absolute;
+	margin: auto;
+	width: 95%;
+	max-width: 1000px;
+	font-size: 1.1em;
+	line-height: 1.75em;
+	z-index: -999;
+}
+
+p {
+	cursor: pointer;
+	margin: 25px auto;
+}

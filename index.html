@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Treehouse Video Player Project</title>
+
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+		
+
+		<!-- My Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+		
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="videoWrap">
+			<video id="video" preload="metadata">
+				<source src="video/Video.mp4" type="video/mp4">
+				<source src="video/Video.ogg" type="video/ogg">
+				<p>Your user agent does not support the HTML5 Video element.</p>
+			</video>
+			<div class="controlWrap">
+				<div class="control">
+					<div id="progressBar">
+					    <div id="timeBar"></div>
+					    <div id="bufferBar"></div>
+					</div>
+					
+					<div class="playRate">
+						<a href="#" id="playPause"><span id="playPauseSpan" class="glyphicon glyphicon-play"></span></a>
+						<a href="#" id="sl"><span class="glyphicon glyphicon-step-forward"></span></a>
+						<a href="#" id="ff"><span class="glyphicon glyphicon-forward"></span></a>
+						<a href="#" id="rw"><span class="glyphicon glyphicon-repeat"></span></a>
+					</div>
+					
+					<div class="progressTime">
+						<span id="currentTime"></span><span id="duration"></span>
+					</div>
+					
+					<div class="vol">
+						<a href="#" id="downVol" class="volCon"><span class="glyphicon glyphicon-menu-down"></span></a>
+						<a href="#" id="upVol" class="volCon"><span class="glyphicon glyphicon-menu-up"></span></a>					
+						<a href="#" id="mute" ><span class="glyphicon glyphicon-volume-up"></span></a>
+					</div>
+					
+					<div class="glyphicon glyphicon-resize-full" id="fullscreen"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="test"></div>
+		
+		<div class="mainWrap">
+			<div id="transcript">
+				<!-- DATA FROM SRT FILE -->
+				<p id="p1">
+					<!-- 1
+					00:00:00,240 ~ 00:00:04,130 -->
+					Now that we've looked at the architecture
+					of the internet, let's see how you might
+
+					<!-- 2
+					00:00:04,130 ~ 00:00:07,535 -->
+					connect your personal devices to
+					the internet inside your house.
+				</p>
+
+				<p id="p2">
+					<!-- 3
+					00:00:07,535 ~ 00:00:11,270 -->
+					<span id="s3">Well there are many ways to
+					connect to the internet, and</span>
+
+					<!-- 4
+					00:00:11,270 ~ 00:00:13,960 -->
+					<span id="s4">most often people connect wirelessly.</span>
+				</p>
+
+				<p id="p3">
+					<!-- 5
+					00:00:13,960 ~ 00:00:17,940 -->
+					Let's look at an example of how you can connect to the internet.
+				</p>
+
+				<p id="p4">
+					<!-- 6
+					00:00:17,940 ~ 00:00:22,370 -->
+					If you live in a city or a town, you probably have a coaxial cable for
+
+					<!-- 7
+					00:00:22,370 ~ 00:00:26,880 -->
+					cable Internet, or a phone line if you have DSL, running to the outside of
+
+					<!-- 8
+					00:00:26,880 ~ 00:00:30,920 -->
+					your house, that connects you to the Internet Service Provider, or ISP.
+				</p>
+
+				<p id="p5">
+					<!-- 9
+					00:00:32,100 ~ 00:00:34,730 -->
+					If you live far out in the country, you'll more likely have
+
+					<!-- 10
+					00:00:34,730 ~ 00:00:39,430 -->
+					a dish outside your house, connecting you wirelessly to your closest ISP, or
+
+					<!-- 11
+					00:00:39,430 ~ 00:00:41,190 -->
+					you might also use the telephone system.
+				</p>
+
+				<p id="p6">
+					<!-- 12
+					00:00:42,350 ~ 00:00:46,300 -->
+					Whether a wire comes straight from the ISP hookup outside your house, or
+
+					<!-- 13
+					00:00:46,300 ~ 00:00:49,270 -->
+					it travels over radio waves from your roof,
+
+					<!-- 14
+					00:00:49,270 ~ 00:00:53,760 -->
+					the first stop a wire will make once inside your house, is at your modem.
+				</p>
+
+				<p id="p7">
+					<!-- 15
+					00:00:53,760 ~ 00:00:57,780 -->
+					A modem is what connects the internet to your network at home.
+				</p>
+
+				<p id="p8">
+					<!-- 16
+					00:00:57,780 ~ 00:01:00,150 -->
+					A few common residential modems are DSL or
+
+					<!-- 17
+					00:01:00,150 ~ 00:01:04,085 -->
+					cable which translate the digital data from your computer
+
+					<!-- 18
+					00:01:04,085 ~ 00:01:09,440 -->
+					into digital signals to be transmitted over cable or telephone wires.
+				</p>
+				
+				<p id="p9">
+					<!-- 19
+					00:01:09,440 ~ 00:01:14,190 -->
+					From the modem, an ethernet cable will usually connect to a residential router.
+				</p>
+
+				<p id="p10">
+					<!-- 20
+					00:01:14,190 ~ 00:01:17,600 -->
+					Although today, some service providers combine your modem and
+
+					<!-- 21
+					00:01:17,600 ~ 00:01:19,150 -->
+					router together in one box.
+				</p>
+
+				<p id="p11">	
+					<!-- 22
+					00:01:20,410 ~ 00:01:25,540 -->
+					Inside your house, you might have multiple devices from a laptop to a thermostat.
+				</p>
+
+				<p id="p12">	
+					<!-- 23
+					00:01:25,540 ~ 00:01:29,820 -->
+					But no matter what kind of devices you have, your router acts as your home's
+
+					<!-- 24
+					00:01:29,820 ~ 00:01:32,800 -->
+					central hub that connects all you devices to the internet.
+				</p>
+
+				<p id="p13">	
+					<!-- 25
+					00:01:33,850 ~ 00:01:37,530 -->
+					In order to connect to a router, you can either hard connect a device with
+
+					<!-- 26
+					00:01:37,530 ~ 00:01:42,810 -->
+					an ethernet cable, like in the case of a TV, desktop computer, or game console, or
+
+					<!-- 27
+					00:01:42,810 ~ 00:01:47,930 -->
+					wirelessly, like for a laptop, phone, or printer equipped with Wi-Fi.
+				</p>
+
+				<p id="p14">	
+					<!-- 28
+					00:01:47,930 ~ 00:01:50,110 -->
+					To review, everything we've been learning about,
+
+					<!-- 29
+					00:01:50,110 ~ 00:01:55,040 -->
+					the backbone of the internet is made up of primary routers, networks, and
+
+					<!-- 30
+					00:01:55,040 ~ 00:01:59,980 -->
+					typically fiber optic cables connecting networks around the globe.
+				</p>
+
+				<p id="p15">	
+					<!-- 31
+					00:01:59,980 ~ 00:02:04,290 -->
+					Routers and switches create local and wide area networks.
+				</p>
+
+				<p id="p16">
+					<!-- 32
+					00:02:04,290 ~ 00:02:08,300 -->
+					Modems and routers connect your devices to the internet service provider,
+
+					<!-- 33
+					00:02:08,300 ~ 00:02:09,878 -->
+					which connects you to the internet.
+				</p>
+
+				<p id="p17">	
+					<!-- 34
+					00:02:09,878 ~ 00:02:14,260 -->
+					And the TCP/IP protocol suite defines the rules of how
+
+					<!-- 35
+					00:02:14,260 ~ 00:02:17,590 -->
+					each of these devices communicate over the Internet.
+				</p>
+
+				<p id="p18">	
+					<!-- 36
+					00:02:17,590 ~ 00:02:20,520 -->
+					The Internet has come a long way since its inception as
+
+					<!-- 37
+					00:02:20,520 ~ 00:02:23,190 -->
+					a US Defense Department research project.
+				</p>
+
+				<p id="p19">	
+					<!-- 38
+					00:02:23,190 ~ 00:02:27,290 -->
+					And most people take for granted how easy it is to connect information and
+
+					<!-- 39
+					00:02:27,290 ~ 00:02:29,740 -->
+					people through the Internet nowadays.
+				</p>
+
+				<p id="p20">	
+					<!-- 40
+					00:02:29,740 ~ 00:02:32,230 -->
+					But maintaining the pipelines, protocols, and
+
+					<!-- 41
+					00:02:32,230 ~ 00:02:36,170 -->
+					technologies that keep the Internet working is no easy task.
+				</p>
+
+				<p id="p21">	
+					<!-- 42 
+					00:02:36,170 ~ 00:02:40,120 -->
+					It's also important to note before we go, that not everyone in
+
+					<!-- 43
+					00:02:40,120 ~ 00:02:44,560 -->
+					every country has equal access to this great pipeline of information.
+				</p>
+
+				<p id="p22">	
+					<!-- 44
+					00:02:44,560 ~ 00:02:48,490 -->
+					But no matter where you're from, or what you wish to do on the Internet,
+
+					<!-- 45
+					00:02:48,490 ~ 00:02:52,950 -->
+					being informed, maintaining standards, and contributing to the upkeep of the internet
+
+					<!-- 46
+					00:02:52,950 ~ 00:02:56,860 -->
+					hardware and protocols is our responsibility as consumers.
+				</p>
+			</div>
+		</div>
+			
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		
+		<!--MyScripts -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

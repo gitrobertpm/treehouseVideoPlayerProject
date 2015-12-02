@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang='en' xmlns='http://www.w3.org/2006/10/ttaf1' xmlns:tts='http://www.w3.org/2006/10/ttaf1#style'>
+	<head />
+	<body>
+		<div xml:id="captions">
+			<p begin="00:00:00.240" end="00:00:04.130">Now that we've looked at the architecture &lt;br/&gt; of the internet, let's see how you might</p>
+			<p begin="00:00:04.130" end="00:00:07.535">connect your personal devices to&lt;br /&gt;the internet inside your house.</p>
+			<p begin="00:00:07.535" end="00:00:11.270">Well there are many ways to&lt;br /&gt;connect to the internet, and</p>
+			<p begin="00:00:11.270" end="00:00:13.960">most often people connect wirelessly.</p>
+			<p begin="00:00:13.960" end="00:00:17.940">Let's look at an example of how&lt;br /&gt;you can connect to the internet.</p>
+			<p begin="00:00:17.940" end="00:00:22.370">If you live in a city or a town,&lt;br /&gt;you probably have a coaxial cable for</p>
+			<p begin="00:00:22.370" end="00:00:26.880">cable Internet, or a phone line if you&lt;br /&gt;have DSL, running to the outside of</p>
+			<p begin="00:00:26.880" end="00:00:30.920">your house, that connects you to&lt;br /&gt;the Internet Service Provider, or ISP.</p>
+			<p begin="00:00:32.100" end="00:00:34.730">If you live far out in the country,&lt;br /&gt;you'll more likely have</p>
+			<p begin="00:00:34.730" end="00:00:39.430">a dish outside your house, connecting&lt;br /&gt;you wirelessly to your closest ISP, or</p>
+			<p begin="00:00:39.430" end="00:00:41.190">you might also use the telephone system.</p>
+			<p begin="00:00:42.350" end="00:00:46.300">Whether a wire comes straight from&lt;br /&gt;the ISP hookup outside your house, or</p>
+			<p begin="00:00:46.300" end="00:00:49.270">it travels over radio&lt;br /&gt;waves from your roof,</p>
+			<p begin="00:00:49.270" end="00:00:53.760">the first stop a wire will make once&lt;br /&gt;inside your house, is at your modem.</p>
+			<p begin="00:00:53.760" end="00:00:57.780">A modem is what connects the internet&lt;br /&gt;to your network at home.</p>
+			<p begin="00:00:57.780" end="00:01:00.150">A few common residential modems are DSL or</p>
+			<p begin="00:01:00.150" end="00:01:04.085">cable which translate the digital&lt;br /&gt;data from your computer</p>
+			<p begin="00:01:04.085" end="00:01:09.440">into digital signals to be transmitted&lt;br /&gt;over cable or telephone wires.</p>
+			<p begin="00:01:09.440" end="00:01:14.190">From the modem, an ethernet cable will&lt;br /&gt;usually connect to a residential router.</p>
+			<p begin="00:01:14.190" end="00:01:17.600">Although today, some service&lt;br /&gt;providers combine your modem and</p>
+			<p begin="00:01:17.600" end="00:01:19.150">router together in one box.</p>
+			<p begin="00:01:20.410" end="00:01:25.540">Inside your house, you might have multiple&lt;br /&gt;devices from a laptop to a thermostat.</p>
+			<p begin="00:01:25.540" end="00:01:29.820">But no matter what kind of devices you&lt;br /&gt;have, your router acts as your home's</p>
+			<p begin="00:01:29.820" end="00:01:32.800">central hub that connects all&lt;br /&gt;you devices to the internet.</p>
+			<p begin="00:01:33.850" end="00:01:37.530">In order to connect to a router,&lt;br /&gt;you can either hard connect a device with</p>
+			<p begin="00:01:37.530" end="00:01:42.810">an ethernet cable, like in the case of a&lt;br /&gt;TV, desktop computer, or game console, or</p>
+			<p begin="00:01:42.810" end="00:01:47.930">wirelessly, like for a laptop, phone,&lt;br /&gt;or printer equipped with Wi-Fi.</p>
+			<p begin="00:01:47.930" end="00:01:50.110">To review,&lt;br /&gt;everything we've been learning about,</p>
+			<p begin="00:01:50.110" end="00:01:55.040">the backbone of the internet is made&lt;br /&gt;up of primary routers, networks, and</p>
+			<p begin="00:01:55.040" end="00:01:59.980">typically fiber optic cables&lt;br /&gt;connecting networks around the globe.</p>
+			<p begin="00:01:59.980" end="00:02:04.290">Routers and switches create local and&lt;br /&gt;wide area networks.</p>
+			<p begin="00:02:04.290" end="00:02:08.300">Modems and routers connect your devices&lt;br /&gt;to the internet service provider,</p>
+			<p begin="00:02:08.300" end="00:02:09.878">which connects you to the internet.</p>
+			<p begin="00:02:09.878" end="00:02:14.260">And the TCP/IP protocol suite&lt;br /&gt;defines the rules of how</p>
+			<p begin="00:02:14.260" end="00:02:17.590">each of these devices&lt;br /&gt;communicate over the Internet.</p>
+			<p begin="00:02:17.590" end="00:02:20.520">The Internet has come a long&lt;br /&gt;way since its inception as</p>
+			<p begin="00:02:20.520" end="00:02:23.190">a US Defense Department research project.</p>
+			<p begin="00:02:23.190" end="00:02:27.290">And most people take for granted how&lt;br /&gt;easy it is to connect information and</p>
+			<p begin="00:02:27.290" end="00:02:29.740">people through the Internet nowadays.</p>
+			<p begin="00:02:29.740" end="00:02:32.230">But maintaining the pipelines,&lt;br /&gt;protocols, and</p>
+			<p begin="00:02:32.230" end="00:02:36.170">technologies that keep the Internet&lt;br /&gt;working is no easy task.</p>
+			<p begin="00:02:36.170" end="00:02:40.120">It's also important to note before we go,&lt;br /&gt;that not everyone in</p>
+			<p begin="00:02:40.120" end="00:02:44.560">every country has equal access to&lt;br /&gt;this great pipeline of information.</p>
+			<p begin="00:02:44.560" end="00:02:48.490">But no matter where you're from, or&lt;br /&gt;what you wish to do on the Internet,</p>
+			<p begin="00:02:48.490" end="00:02:52.950">being informed, maintaining standards, and&lt;br /&gt;contributing to the upkeep of the internet</p>
+			<p begin="00:02:52.950" end="00:02:56.860">hardware and protocols is our&lt;br /&gt;responsibility as consumers.</p>
+			<p begin="00:02:52.950" end="00:02:56.860"></p>
+			<p begin="00:02:52.950" end="00:02:56.860"></p>
+		</div>
+	</body>
+</tt>
