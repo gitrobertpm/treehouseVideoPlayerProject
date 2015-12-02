@@ -117,17 +117,17 @@ var updatebar = function(x) {
 };
 
 //BUFFERED DATA
-// var startBuffer = function() {
-    // var maxduration = vid.duration;
-    // var currentBuffer = vid.buffered.end(0);
-    // var percentage = 100 * currentBuffer / maxduration;
-    // $('#bufferBar').css('width', percentage+'%');
+var startBuffer = function() {
+    var maxduration = vid.duration;
+    var currentBuffer = vid.buffered.end(0);
+    var percentage = 100 * currentBuffer / maxduration;
+    $('#bufferBar').css('width', percentage+'%');
  
-    // if(currentBuffer < maxduration) {
-        // setTimeout(startBuffer, 500);
-    // }
-// };
-// setTimeout(startBuffer, 500);
+    if(currentBuffer < maxduration) {
+        setTimeout(startBuffer, 500);
+    }
+};
+setTimeout(startBuffer, 500);
 
 // FULLSCREEN - GOT SOME HELP FOR THIS FROM THE FOLLOWING LINK: http://generatedcontent.org/post/70347573294/is-your-fullscreen-api-code-up-to-date-find-out
 var fullscreen = document.getElementById("fullscreen");
@@ -163,20 +163,20 @@ var p5 = document.getElementById("p5");
 var p6 = document.getElementById("p6");
 var p7 = document.getElementById("p7");
 var p8 = document.getElementById("p8");
-var p9 = document.getElementById("p9");
-var p10 = document.getElementById("p10");
-var p11 = document.getElementById("p11");
-var p12 = document.getElementById("p12");
-var p13 = document.getElementById("p13");
-var p14 = document.getElementById("p14");
-var p15 = document.getElementById("p15");
-var p16 = document.getElementById("p16");
-var p17 = document.getElementById("p17");
-var p18 = document.getElementById("p18");
-var p19 = document.getElementById("p19");
-var p20 = document.getElementById("p20");
-var p21 = document.getElementById("p21");
-var p22 = document.getElementById("p22");
+// var p9 = document.getElementById("p9");
+// var p10 = document.getElementById("p10");
+// var p11 = document.getElementById("p11");
+// var p12 = document.getElementById("p12");
+// var p13 = document.getElementById("p13");
+// var p14 = document.getElementById("p14");
+// var p15 = document.getElementById("p15");
+// var p16 = document.getElementById("p16");
+// var p17 = document.getElementById("p17");
+// var p18 = document.getElementById("p18");
+// var p19 = document.getElementById("p19");
+// var p20 = document.getElementById("p20");
+// var p21 = document.getElementById("p21");
+// var p22 = document.getElementById("p22");
 
 // SHORTCUT FUNCTION FOR MAKING TRANSCRIPT SENTENCES CLICKABLE
 function clickable(idee, val) {
