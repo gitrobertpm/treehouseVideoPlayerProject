@@ -37,13 +37,13 @@ vid.onmouseover = function() {
 	margAdjust("-50px");
 };
 
-control[0].onmouseout = function() {
+controlWrap[0].onmouseout = function() {
 	controlWrap[0].style.height = "4px";
 	control[0].style.height = "4px";
 	margAdjust("-2px");
 };
 
-control[0].onmouseover = function() {
+controlWrap[0].onmouseover = function() {
 	controlWrap[0].style.height = "50px";
 	control[0].style.height = "50px";
 	margAdjust("-50px");
