@@ -9,11 +9,45 @@ https://www.developphp.com/video/JavaScript/Video-Full-Screen-Toggle-Custom-Play
 
 var width = window.innerWidth;
 
-var vid = document.getElementById("video");
-
 /*=======================
- VIDEO CONTROLS
- ======================*/
+VIDEO CONTROLS
+======================*/
+var vid = document.getElementById("video");
+ 
+// MAKE CONTROLS VANISH ON MOUSE OUT AND REAPPEAR ON HOVER
+var controlWrap = document.getElementsByClassName("controlWrap");
+var control = document.getElementsByClassName("control");
+
+// SHORCUT FUNCTION FOR .CONTROLWRAP DIV TOP MARGIN ADJUSTMENT ON LARGE SCREEN HOVER
+function margAdjust(mt) {
+	if (width > 599) {
+		controlWrap[0].style.marginTop = mt;
+	}
+};
+
+vid.onmouseout = function() {
+	controlWrap[0].style.height = "4px";
+	control[0].style.height = "4px";
+	margAdjust("-2px");
+};
+
+vid.onmouseover = function() {
+	controlWrap[0].style.height = "50px";
+	control[0].style.height = "50px";
+	margAdjust("-50px");
+};
+
+control[0].onmouseout = function() {
+	controlWrap[0].style.height = "4px";
+	control[0].style.height = "4px";
+	margAdjust("-2px");
+};
+
+control[0].onmouseover = function() {
+	controlWrap[0].style.height = "50px";
+	control[0].style.height = "50px";
+	margAdjust("-50px");
+};
  
 // PLAY/PAUSE
 var playPause = document.getElementById("playPause");
