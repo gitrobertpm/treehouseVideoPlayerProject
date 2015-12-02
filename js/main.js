@@ -5,7 +5,7 @@ http://www.inwebson.com/html5/custom-html5-video-controls-with-jquery/
 https://www.developphp.com/video/JavaScript/Video-Full-Screen-Toggle-Custom-Player-Controls-Tutorial
 ======================================================================================================*/
 
-//"use strict";
+"use strict";
 
 var width = window.innerWidth;
 
