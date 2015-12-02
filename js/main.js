@@ -163,20 +163,6 @@ var p5 = document.getElementById("p5");
 var p6 = document.getElementById("p6");
 var p7 = document.getElementById("p7");
 var p8 = document.getElementById("p8");
-// var p9 = document.getElementById("p9");
-// var p10 = document.getElementById("p10");
-// var p11 = document.getElementById("p11");
-// var p12 = document.getElementById("p12");
-// var p13 = document.getElementById("p13");
-// var p14 = document.getElementById("p14");
-// var p15 = document.getElementById("p15");
-// var p16 = document.getElementById("p16");
-// var p17 = document.getElementById("p17");
-// var p18 = document.getElementById("p18");
-// var p19 = document.getElementById("p19");
-// var p20 = document.getElementById("p20");
-// var p21 = document.getElementById("p21");
-// var p22 = document.getElementById("p22");
 
 // SHORTCUT FUNCTION FOR MAKING TRANSCRIPT SENTENCES CLICKABLE
 function clickable(idee, val) {
@@ -193,20 +179,6 @@ clickable(p5, 32.11);
 clickable(p6, 42.36);
 clickable(p7,53.77 );
 clickable(p8, 57.79);
-// clickable(p9, 69.45);
-// clickable(p10, 74.2);
-// clickable(p11, 80.42);
-// clickable(p12, 85.55);
-// clickable(p13, 93.86);
-// clickable(p14, 107.94);
-// clickable(p15, 119.99);
-// clickable(p16, 124.3);
-// clickable(p17, 129.88);
-// clickable(p18, 137.6);
-// clickable(p19, 143.2);
-// clickable(p20, 149.75);
-// clickable(p21, 156.18);
-// clickable(p22, 164.57);
 
 // SHORTCUT FUNCTION TO HIGHLIGHT APPROPRIATE TEXT 
 function hiLite(t1, t2, idee) {
@@ -249,18 +221,4 @@ vid.ontimeupdate  = function() {
 	hiLite(42.34, 53.77, p6);
 	hiLite(53.75, 57.79, p7);
 	hiLite(57.77, 6.15, p8);
-	// hiLite(69.43, 74.2, p9);
-	// hiLite(74.18, 79.16, p10);
-	// hiLite(80.4, 85.55, p11);
-	// hiLite(85.53, 92.81, p12);
-	// hiLite(93.84, 107.94, p13);
-	// hiLite(107.92, 119.99, p14);
-	// hiLite(119.97, 124.3, p15);
-	// hiLite(124.28, 129.88, p16);
-	// hiLite(129.86, 137.6, p17);
-	// hiLite(137.58, 143.2, p18);
-	// hiLite(143.18, 149.75, p19);
-	// hiLite(149.73, 156.18, p20);
-	// hiLite(156.16, 164.57, p21);
-	// hiLite(164.55, 176.87, p22);
 };
