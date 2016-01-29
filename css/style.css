@@ -1,7 +1,7 @@
 /* TREEHOUSE VIDEO PLAYER PROJECT - VIDEO AND CONTROLS - BUILT MOBILE FIRST */
 /* STYLINGS FOR LARGE SCREENS LOCATED IN RESPONSIVE.CSS */
 
-*, *:before, *:after {
+* {
 	box-sizing: border-box;
 }
 
@@ -59,12 +59,19 @@ a {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: orange;
+    background-color: dodgerblue;
 }
 
-.glyphicon {
-	font-size: 1.9em;
-	color: rgb(255,255,255);
+.controls {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.play, .pause, .slow, .fast {
+	margin-right: 25px;
 }
 
 .playRate {
@@ -75,15 +82,11 @@ a {
 }
 
 .progressTime {
-	position: absolute;
-	top: 15px;
-	left: 150px;
-	height: 25px;
-	color: white;
-	font-size: 1.1em;
+	font-family: 'Play', sans-serif;
+	display: none;
 }
 
-.vol {
+.volWrap {
 	position: absolute;
 	top: 10px;
 	right: 5px;
@@ -110,6 +113,7 @@ a {
 }
 
 #transcript {
+	font-family: 'Play', sans-serif;
 	position: absolute;
 	margin: auto;
 	width: 95%;
@@ -117,6 +121,15 @@ a {
 	font-size: 1.1em;
 	line-height: 1.75em;
 	z-index: -999;
+}
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 800;
+}
+
+h3 {
+	font-family: 'Dosis', sans-serif;
 }
 
 p {

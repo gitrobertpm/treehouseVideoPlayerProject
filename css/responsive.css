@@ -2,36 +2,50 @@
 /* GENERAL AND SMALL SCREEN STYLINGS LOCATED IN STYLE.CSS */
 
 @media screen and (min-width: 600px) {
+	.videoWrap {
+		margin-top: 25px;
+	}
+	
 	.controlWrap {
 		margin-top: -50px;
 		background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1));background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1));
 		overflow: hidden;
 	}
 	
-	.glyphicon {
-		margin: auto 3px;
-	}
-	
 	.progressTime {
-		left: 175px;
+		display: inline-block;
+		position: absolute;
+		top: 15px;
+		left: 250px;
+		height: 25px;
+		color: white;
+		font-size: 1.1em;
 	}
 	
-	.vol {
+	.controls {
+		opacity: 0.7;
+	}
+	
+	.controls:active, .controls:focus, .controls:hover {
+		opacity: 1;
+	}
+	
+	.volWrap {
 		top: 10px;
 		right: 60px;
 		width: 35px;
 		overflow: hidden;
 	}
 	
-	.vol:active, .vol:focus, .vol:hover {
+	.volWrap:active, .volWrap:focus, .volWrap:hover {
 		width: 110px;
 	}
 	
-	.vol:active > .volCon, .vol:focus > .volCon, .vol:hover > .volCon {
+	.volWrap:active > .volCon, .volWrap:focus > .volCon, .volWrap:hover > .volCon {
 		display: inline-block;
 	}
 	
-	#mute {
+	#vol {
 		float: right;
 	}
 	

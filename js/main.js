@@ -1,5 +1,5 @@
 /*====================================================================================================
-JAVASCRIPT FOR TREEHOUSE VIDEO PLAYER PROJECT
+JAVASCRIPT AND JQUERY FOR TREEHOUSE VIDEO PLAYER PROJECT
 THE FOLLOWING LINKS WERE A GREAT HELP IN FIGURING OUT HOW TO COMPLETE THIS PROJECT
 http://www.inwebson.com/html5/custom-html5-video-controls-with-jquery/
 https://www.developphp.com/video/JavaScript/Video-Full-Screen-Toggle-Custom-Player-Controls-Tutorial
@@ -19,53 +19,49 @@ var controlWrap = document.getElementsByClassName("controlWrap");
 var control = document.getElementsByClassName("control");
 
 // SHORCUT FUNCTION FOR .CONTROLWRAP DIV TOP MARGIN ADJUSTMENT ON LARGE SCREEN HOVER
-function margAdjust(mt) {
+function margAdjust(mt, ch, cwh) {
 	if (width > 599) {
 		controlWrap[0].style.marginTop = mt;
+		control[0].style.height = ch;
+		controlWrap[0].style.height = cwh;
 	}
 };
 
-vid.onmouseout = function() {
-	controlWrap[0].style.height = "4px";
-	control[0].style.height = "4px";
-	margAdjust("-2px");
-};
+$(".controlWrap").hover(
+	function() {
+		margAdjust("-50px", "50px", "50px");
+	}, function() {
+		margAdjust("-2px", "4px", "4px");
+});
 
-vid.onmouseover = function() {
-	controlWrap[0].style.height = "50px";
-	control[0].style.height = "50px";
-	margAdjust("-50px");
-};
-
-controlWrap[0].onmouseout = function() {
-	controlWrap[0].style.height = "4px";
-	control[0].style.height = "4px";
-	margAdjust("-2px");
-};
-
-controlWrap[0].onmouseover = function() {
-	controlWrap[0].style.height = "50px";
-	control[0].style.height = "50px";
-	margAdjust("-50px");
-};
+$("#video").hover(
+	function() {
+		margAdjust("-50px", "50px", "50px");
+	}, function() {
+		margAdjust("-2px", "4px", "4px");
+});
  
 // PLAY/PAUSE
 var playPause = document.getElementById("playPause");
 var playPauseSpan = document.getElementById("playPauseSpan");
 
+$(".pause").hide();
+
 playPause.onclick = function() {
 	if (vid.paused) {
 		vid.play();
 		vid.playbackRate = 1;
-		playPauseSpan.removeAttribute("class", "glyphicon glyphicon-pause");
-		playPauseSpan.setAttribute("class", "glyphicon glyphicon-play");
+		$(".play").hide();
+		$(".pause").show();
 	} else {
 		if (vid.playbackRate != 1) {
 			vid.playbackRate = 1;
+			$(".play").hide();
+			$(".pause").show();
 		} else {
 			vid.pause();
-			playPauseSpan.removeAttribute("class", "glyphicon glyphicon-play");
-			playPauseSpan.setAttribute("class", "glyphicon glyphicon-pause");
+			$(".play").show();
+			$(".pause").hide();
 		}
 	}
 };
@@ -78,6 +74,8 @@ var sl = document.getElementById("sl");
 ff.onclick = function() {
 	vid.play();
 	vid.playbackRate = 3;
+	$(".play").show();
+	$(".pause").hide();
 };
 
 rw.onclick = function() {
@@ -87,15 +85,27 @@ rw.onclick = function() {
 sl.onclick = function() {
 	vid.play();
 	vid.playbackRate = .5;
+	$(".play").show();
+	$(".pause").hide();
 };
 
 // VOLUME
-var mute = document.getElementById("mute");
+var vol = document.getElementById("vol");
+var volSpan = document.getElementById("volSpan");
 var downVol = document.getElementById("downVol");
 var upVol = document.getElementById("upVol");
 
-mute.onclick = function() {
+$(".mute").hide();
+
+vol.onclick = function() {
     vid.muted = !vid.muted;
+    if (vid.muted) {
+		$(".unMute").hide();
+		$(".mute").show();
+    } else if (!vid.muted) {
+		$(".mute").hide();
+		$(".unMute").show();
+    }
 };
 
 downVol.onclick = function() {
@@ -234,8 +244,12 @@ vid.ontimeupdate  = function() {
 	if(dursecs < 10){ dursecs = "0" + dursecs; }
 	if(curmins < 10){ curmins = "0" + curmins; }
 	if(durmins < 10){ durmins = "0" + durmins; }
-	cur.innerHTML = curmins + ":" + cursecs + "/ ";
-	dur.innerHTML = durmins + ":" + dursecs;
+	
+	if (width > 599) {
+		cur.innerHTML = curmins + ":" + cursecs + " / ";
+		dur.innerHTML = durmins + ":" + dursecs;
+	}
+		
 	
 	
 	// UPDATE PROGRESS BAR
